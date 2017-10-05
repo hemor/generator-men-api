@@ -1,9 +1,9 @@
-# generator-express-default-api [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
-> This package generates a basic express api application
+# generator-men-api [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+> This package generates an express and mongodb (using mongoose) api application
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-express-default-api using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-npm-api using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
@@ -13,7 +13,7 @@ npm install -g generator-men-api
 Then generate your new project:
 
 ```bash
-yo men-api
+yo men-api app-name
 ```
 
 ## Getting To Know Yeoman

@@ -28,9 +28,9 @@ yo men-api app-name
 MIT © [Emmanuel Akinpelu]()
 
 
-[npm-image]: https://badge.fury.io/js/generator-express-default-api.svg
-[npm-url]: https://npmjs.org/package/generator-express-default-api
-[travis-image]: https://travis-ci.org/hemor/generator-express-default-api.svg?branch=master
-[travis-url]: https://travis-ci.org/hemor/generator-express-default-api
-[daviddm-image]: https://david-dm.org/hemor/generator-express-default-api.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/hemor/generator-express-default-api
+[npm-image]: https://badge.fury.io/js/generator-men-api.svg
+[npm-url]: https://npmjs.org/package/generator-men-api
+[travis-image]: https://travis-ci.org/hemor/generator-men-api.svg?branch=master
+[travis-url]: https://travis-ci.org/hemor/generator-men-api
+[daviddm-image]: https://david-dm.org/hemor/generator-men-api.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/hemor/generator-men-api

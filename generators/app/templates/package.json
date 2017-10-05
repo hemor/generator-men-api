@@ -1,0 +1,40 @@
+{
+  "name": "<%= appName %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
+  "main": "./src/server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node ./src/server.js",
+    "dev": "NODE_ENV=development nodemon ./src/server.js",
+    "test": "NODE_ENV=test mocha ./test/integration",
+    "test:unit": "NODE_ENV=test mocha ./test/unit"
+  },
+  "keywords": [
+    "Node",
+    "Express"
+  ],
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "dependencies": {
+    "ajv": "^5.2.3",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "compression": "^1.7.0",
+    "config": "^1.26.2",
+    "express": "^4.15.5",
+    "express-winston": "^2.4.0",
+    "helmet": "^3.8.1",
+    "mongoose": "^4.11.13",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.7.2"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "faker": "^4.1.0",
+    "mocha": "^3.5.3",
+    "nodemon": "^1.12.1"
+  }
+}

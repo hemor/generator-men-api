@@ -1,0 +1,18 @@
+{
+  "db": {
+    "host": "<%= dbHost %>",
+    "port": <%= dbPort %>,
+    "database": "<%= dbName %>",
+    "user": "<%= dbUser %>",
+    "pass": "<%= dbPass %>",
+    "authSource": "admin"
+  },
+  "app": {
+    "host": "http://localhost",
+    "port": <%= appPort %>
+  },
+  "log": {
+    "access": "logs/access",
+    "error": "logs/error"
+  }
+}

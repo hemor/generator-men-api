@@ -128,15 +128,15 @@ module.exports = class extends Generator {
 
     // Copy non-template files
     this.fs.copy(
-      this.templatePath('.gitignore'),
+      this.templatePath('gitignore'),
       this.destinationPath('.gitignore')
     );
     this.fs.copy(
-      this.templatePath('.nodemonignore'),
+      this.templatePath('nodemonignore'),
       this.destinationPath('.nodemonignore')
     );
     this.fs.copy(
-      this.templatePath('.editorconfig'),
+      this.templatePath('editorconfig'),
       this.destinationPath('.editorconfig')
     );
     this.fs.copy(

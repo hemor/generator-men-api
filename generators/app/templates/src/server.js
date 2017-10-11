@@ -6,6 +6,7 @@ let config = require('config');
 let helmet = require('helmet');
 let compression = require('compression');
 let mongoose = require('mongoose');
+let cors = require('cors');
 
 let logger = require('./middlewares/logger');
 let routes = require('./routes');
@@ -21,6 +22,7 @@ if (config.util.getEnv('NODE_ENV') !== 'test') {
 }
 
 // Add express middlewares
+app.use(cors());
 app.use(helmet());
 app.use(compression());
 app.use(bodyParser.json());             // Parse application/json

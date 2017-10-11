@@ -21,6 +21,7 @@
     "body-parser": "^1.18.2",
     "compression": "^1.7.0",
     "config": "^1.26.2",
+    "cors": "^2.8.4",
     "express": "^4.15.5",
     "express-winston": "^2.4.0",
     "helmet": "^3.8.1",

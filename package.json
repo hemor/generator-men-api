@@ -1,6 +1,6 @@
 {
   "name": "generator-men-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This package generates an express and mongodb (using mongoose) api application",
   "homepage": "",
   "author": {

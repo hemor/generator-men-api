@@ -35,15 +35,16 @@ module.exports = class extends Generator {
     }
 
     let folders = this.config.get('folders');
-    let fileName = _.snakeCase(this.options.name);
-    let controllerName = this.options.controller;
     let controllerPath = folders.controller;
     let middlewarePath = folders.middleware;
-    let validatorName = this.options.validator;
+    let fileName = _.snakeCase(this.options.name);
+    let controllerName = _.snakeCase(this.options.controller);
+    let validatorName = _.snakeCase(this.options.validator);
+    let controllerNameString = _.camelCase(`${controllerName}Controller`);
     this.fs.copyTpl(
       this.templatePath('route.js'),
       this.destinationPath(`${folders.route}/${fileName}.js`),
-      { controllerName, controllerPath, middlewarePath, validatorName }
+      { controllerName, controllerPath, middlewarePath, validatorName, controllerNameString }
     );
   }
 };

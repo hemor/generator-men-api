@@ -3,33 +3,30 @@
 function badRequest(req, res) {
   res.status(400)
     .json({
-      status: 'error',
-      error: {
-        code: 400,
-        message: 'Bad Request'
-      }
+      ok: false,
+      status: 400,
+      message: 'Bad Request',
+      data: {}
     });
 };
 
 function unauthorized(req, res) {
   res.status(401)
     .json({
-      status: 'error',
-      error: {
-        code: 401,
-        message: 'Unauthorized Request'
-      }
+      ok: false,
+      status: 401,
+      message: 'Unauthorized Request',
+      data: {}
     });
 };
 
 function pageNotFound(req, res) {
   res.status(404)
     .json({
-      status: 'error',
-      error: {
-        code: 404,
-        message: 'Page Not Found'
-      }
+      ok: false,
+      status: 404,
+      message: 'Page Not Found',
+      data: {}
     });
 };
 

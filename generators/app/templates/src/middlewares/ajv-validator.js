@@ -13,21 +13,21 @@ function errorResponse(schemaErrors) {
     let message = error.message;
     return { params, message };
   });
-  return {
-    status: 'error',
-    error: {
-      message: 'Invalid data',
-      data: error
-    }
-  };
+  return errors;
 }
 
 
 function validateSchema(schemaName) {
   return function (req, res, next) {
     if (!ajv.validate(schemaName, req.body)) {
-      return res.status(400).json(errorResponse(ajv.errors));
+      return res.status(400).json({
+        ok: false,
+        status: 400,
+        message: 'Invalid data',
+        data: errorResponse(ajv.errors)
+      });
     }
+    next();
   };
 }
 

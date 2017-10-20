@@ -30,7 +30,7 @@ module.exports = class extends Generator {
 
     let folders = this.config.get('folders');
     let fileName = _.snakeCase(this.options.name);
-    let modelName = this.options.model;
+    let modelName = _.upperFirst(_.camelCase(this.options.model));
     let modelFileName = _.snakeCase(modelName);
     let modelPath = folders.model;
     this.fs.copyTpl(
